@@ -1,0 +1,33 @@
+.tagspagecontent {
+    display: grid;
+    grid-template-areas: "itemTag itemTag itemTag itemTag";
+    /*grid-template-rows: 200px 200px 100px 100px;*/
+    margin: 2rem auto;
+    width: 100%;
+    gap: 3rem;
+}
+.tagspageheader{
+    font-size: 2rem;
+}
+.tagspage__item {
+    font-size: 3rem;
+    line-height: 5rem;
+}
+.tagspage__item:hover {
+    background-color: rgba(118, 118, 116, .2);
+}
+.tagspage__item__capitalletter {
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 1);
+    -webkit-text-decoration-skip: ink;
+    text-decoration-skip: ink;
+    font-size: 4rem;
+    font-weight: 800;
+    padding-right: .5rem;
+    padding-left: .15rem;
+}
+@media screen and (max-width: 925px) { 
+    .tagspage {
+        grid-template-areas: "itemTag";
+    }
+}

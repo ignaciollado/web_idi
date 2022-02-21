@@ -1,0 +1,133 @@
+nav {
+  position: sticky;
+  top: 0;
+  transition: transform 150ms ease-in-out;
+  padding-bottom: 1.5rem;
+}
+
+nav.nav-bar--hidden {
+  transform: translateY(-100%);
+}
+.header {
+  display:grid;
+  grid-template-areas:
+        "logo main search"
+        "aux aux aux"
+        "language language language";
+  background-color: rgba(255, 255, 255, 1.0);
+  color:rgba(0, 0, 0, 1.0);
+  font-size: 1.4rem;
+  width: 101%;
+}
+.header ul {
+  list-style-type: none;
+}
+.header input {
+  border-top: 0 none #fff;
+  border-left: none;
+  border-right: none;
+  padding: .5rem;
+}
+.header__nav_main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.header__menu__logo img{
+  width: 60px;
+  object-fit: contain;
+  margin: .5rem 0 0 .5rem;
+}
+.header a {
+  padding-right: 1rem;
+}
+
+.header__nav_main li {
+  float: left;
+}
+.header__menu__hamburguer {
+  grid-area: hamburguer;
+  display: none;
+}
+.header__menu__logo {
+  grid-area: logo;
+}
+.header__menu__logo:focus {
+  border-style: solid 1px #000000;
+}
+.header__nav_main {
+  grid-area: main;
+}
+.header__nav_aux {
+  grid-area: aux;
+  font-weight: 400;
+}
+.header__nav_language {
+  grid-area: language;
+  font-weight: normal;
+  text-align: right;
+}
+.header__search{
+  grid-area: search; 
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  width: 99%;
+}
+.header__search input:focus {
+  color: rgba(58, 159, 157, 1);
+  outline: none;
+  border-bottom: 2px solid rgba(58, 159, 157, 1);
+}
+
+.header__nav_aux li {
+  float: right;
+}
+.header__language {
+  background-color: rgba(255, 255, 255, 1);
+  padding-right: 1rem;
+  font-size: 1rem;
+}
+@media screen and (max-width: 925px) { 
+  .header {
+    grid-template-areas:
+        "hamburguer search"
+        "language language"
+        ;
+  }
+  .header__menu__hamburguer { 
+    display: block;
+    position: fixed;
+    margin-top: 0rem;
+    top: 2% !important;
+    width: 100%;
+  }
+  .header__language {
+    padding-right: 1.5rem;
+  }
+  .header__menu__logo { 
+    display: none;
+  }
+  .header__nav_main { 
+    display: none;
+  }
+  .header__nav_aux { 
+    display: none;
+  } 
+  .header__nav_main {
+    padding: 0 .5rem;
+    margin-left: .5rem;
+    background-color: rgba(247, 247, 247, 1.0);
+    border-radius: 6px;
+  }
+  .header__nav_main a{
+    color: rgba(58, 159, 157, 1.0)!important;
+    font-weight: normal!important;
+  }
+  .header__nav_main li {
+    float: none;
+  } 
+  .header__search {
+    max-width: 80%;
+  } 
+}

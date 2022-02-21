@@ -1,0 +1,59 @@
+.contact {
+    background-color: rgba(63, 179, 174, 1);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: 1rem 20rem !important;
+    color: #fff;
+    padding: 4rem;
+    font-size: 3rem;
+    min-height: 100%;
+}
+.contact__title {
+    text-align: center;
+}
+.contact form {
+    text-align: left;
+    padding: 2rem;
+}
+.contact form label, .contact form input, .contact form textarea, .contact form button, .contact form span {
+    margin-bottom: 3rem;
+}
+.contact input, textarea {
+    font-size: 3rem;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+}
+.contact__submit {
+    text-align: right;
+    width: 100%;
+    font-size: 2.0rem;
+    padding: 1rem;
+}
+.contact input[type = text], input[type = email]:focus { 
+    background-color: rgba(235, 235, 231, 1.0);
+    outline: none;
+}
+.contact input[type = submit] {
+    font-size: 2rem;
+    width: 15rem;
+    height: 5rem!important;
+    text-align: center!important;
+    background-color: #7f7f7d;
+    color: #fff;
+    border-radius: 5px;
+}
+.contact__submit input[type = submit]:hover {
+    text-decoration: none!important;
+    color: #000;
+    cursor: pointer;
+}
+.errorSending {
+    font-size: 3rem;
+    color: #ff0000;
+    font-weight: bolder;
+}
+.successSending {
+    font-size: 3rem;
+    color: rgba(2, 41, 11, 1);
+    font-weight: bolder;
+}

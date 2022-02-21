@@ -1,16 +1,34 @@
 {
-  "name": "webidi",
-  "version": "0.1.0",
+  "name": "www_idi_es",
+  "email": "ignacio.llado@idi.es",
+  "version": "1.0.1",
   "private": true,
+  "license": "MIT",
   "dependencies": {
+    "@material-ui/core": "^4.12.2",
+    "@material-ui/icons": "^4.11.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.21.4",
+    "html-react-parser": "^1.2.7",
+    "i18next": "^20.3.2",
+    "i18next-browser-languagedetector": "^6.1.2",
+    "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
+    "react-focus-lock": "^2.5.2",
+    "react-i18next": "^11.11.1",
+    "react-icons": "^4.2.0",
+    "react-json-to-html": "^0.0.6",
+    "react-router-dom": "^6.0.0",
+    "react-scripts": "^1.1.5",
+    "react-simple-chat": "^1.1.4",
+    "socket.io-client": "^4.2.0",
+    "styled-components": "^5.3.0",
     "web-vitals": "^1.0.1"
   },
+  "homepage": "/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -23,16 +41,7 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "comentario linea 1": "El apartado '.browserlist' se ha trasladado al archivo .browserlistrc para evitar",
+  "comentario linea 2": "el error de compilación que aparecía al hacer el yarn build"
+
 }

@@ -1,0 +1,9 @@
+.noticiagrid {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 2rem;
+    background-color: aquamarine;
+    border-radius: 1rem;
+    border:black solid 1px;
+    padding: 1rem;
+}

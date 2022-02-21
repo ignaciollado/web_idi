@@ -1,0 +1,96 @@
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  background-color: rgba(255, 255, 255, 1.0);
+  /*position: relative;*/
+   
+  width: 100%;
+  max-width: 1420px;
+  font-size: 1.2rem;
+  margin-top: 30rem;
+  padding-bottom: 6rem;
+}
+@media screen and (max-width: 1250px) { 
+  footer{
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 925px) { 
+  footer {
+    grid-template-columns: 1fr;
+    font-size: 3.5rem;
+  }
+}
+footer div:nth-child(2) img{
+  width: 4rem;
+}
+footer div {
+    display: grid;
+
+    background-color: rgba(255, 255, 255, 1.0);
+    text-align: left;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+.footer__container_hablemos{
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+}
+.block-hablemos {
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(.25,.46,.45,.94) both;
+    animation: slide-in-right 0.5s cubic-bezier(.25,.46,.45,.94) both;
+    animation-delay: 0s;
+    animation-delay: 0.8s;
+}
+.block-hablemos.nofooter {
+  top: auto !important;
+  bottom: 3rem !important;
+  position: fixed !important;
+  width: 15rem;
+}
+.block-hablemos:not(.movil) {
+  right: .1rem;
+  width: 13rem;
+}
+.block-hablemos {
+  border-radius: 1rem 0rem 0rem 1rem;
+  border: rgba(0, 0, 0, 1.0) 1px solid;
+  /*background-color: rgba(76, 175, 80, 0.3);*/ 
+  right: unset;
+  bottom: 2rem;
+  position: fixed;
+  z-index: 1030;
+  padding-left: .9rem;
+  padding-top: .1rem;
+  padding-bottom: .1rem;
+  box-shadow: 0 8px 15px #00000030;
+  width: 10rem;
+}
+
+.btn-hablemos {
+  font-weight: 700;
+  color: #000;
+  text-decoration: initial !important;
+  align-items: center;
+  padding: 0 !important;
+  border: 0;
+  background: #fff;
+}
+
+@media screen and (max-width: 625px) {
+  footer {
+      grid-template-columns: auto;
+    }
+  footer > div {
+      font-size: 1.5rem;
+      font-weight: 800;
+      text-align: center;
+    }  
+  }  

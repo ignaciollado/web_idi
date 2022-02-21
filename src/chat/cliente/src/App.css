@@ -1,0 +1,50 @@
+.chat__container {
+  display: grid;
+  grid-template-areas:  "areaMensajes"
+                        "areaEscritura";
+  text-align: left;
+  background-color: cadetblue;
+  width: 90%;
+  margin: 1rem auto;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.chat {
+  grid-area: areaMensajes;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 100%;
+  min-height: 50vh;
+  max-height: 50vh;
+  overflow-y: scroll;
+  border-bottom: 2px solid #fff;
+  font-family: 'Courier New', Courier, monospace;
+}
+.App > form {
+  margin: 2rem auto;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  padding: 3rem;
+  width: 80%;
+  color: #000;
+  border-radius: .4rem;
+  background-color: cadetblue;
+}
+
+.chat__container > form {
+  grid-area: areaEscritura;
+  margin: 2rem auto;
+  padding: 3rem;
+  width: 80%;
+  color: #fff;
+  border-radius: .4rem;
+}
+
+form textarea {
+  border-radius: .4rem;
+  line-height: 1;
+  border-color: #dcd7ca;
+  color: #000;
+  letter-spacing: -0.045em;
+    margin: 0;
+    max-width: 100%;
+    padding: 1.5rem 1.8rem;
+}

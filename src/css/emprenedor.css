@@ -1,0 +1,96 @@
+.emprenedor {
+    display: grid;
+    grid-template-columns: 5rem 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    background-color: rgba(255, 255, 255, 1.0);
+    padding: 1rem;
+    max-width: 2560px;  
+  }
+@media screen and (max-width: 625px) { 
+    .emprenedor{
+      grid-template-columns: 1fr;
+    }
+    .emprenedor__cabecera {
+        writing-mode: horizontal-tb!important;
+    }
+  }  
+.emprenedor > div {
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+  }
+.emprenedor img {
+      /*max-width: 592px;*/
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+.emprenedor figcaption {
+    font-size: 2.0rem;
+}
+.emprenedor__cabecera {
+    writing-mode: vertical-lr;
+    background-color: rgba(255, 255, 255, 1.0);
+    border: black 5px none;
+    grid-column-start: 1; 
+    grid-column-end: 1; 
+    grid-row-start: 1; 
+    grid-row-end: 4;
+    margin-left: -1rem;
+    font-size: 4rem;
+    font-weight: 800;
+    min-width: 60%;
+}
+@media screen and (max-width: 625px) { 
+    .emprenedor__cabecera {
+        font-size: 2.8rem;
+        padding-left: 1rem;
+    }
+}
+.emprenedor__iempren {
+    /*grid-area: iempren;
+    background-color: #a3d4db;
+    border-style: solid;
+    border-color: rgba(0,0,0,1);
+    padding: 1rem;*/
+}
+
+.emprenedor__reempresa{
+    /*grid-area: reempresa;
+    background-color: #a3d4db;
+    border-style: solid;
+    border-color: rgba(0,0,0,1);
+    padding: 1rem;*/
+}
+
+.emprenedor__centreBit{
+    /*grid-area: centrebit;
+    background-color: #a3d4db;
+    border-style: solid;
+    border-color: rgba(0,0,0,1);
+    padding: 1rem;*/
+}
+
+.emprenedor__registreMarques{
+    /*grid-area: registremarques;
+    background-color: #a3d4db;
+    border-style: solid;
+    border-color: rgba(0,0,0,1);
+    padding: 1rem;*/
+}
+
+.emprenedor__formacio{
+    /*grid-area: formacio;
+    background-color: #a3d4db;
+    border-style: solid;
+    border-color: rgba(0,0,0,1);
+    padding: 1rem;*/
+}
+
+.emprenedor__ajutsSubvencions{
+    /*grid-area: ajutssubvencions;
+    background-color: #a3d4db;
+    border-style: solid;
+    border-color: rgba(0,0,0,1);
+    padding: 1rem;*/
+}

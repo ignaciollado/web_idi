@@ -1,6 +1,6 @@
 {
-  "short_name": "www_idi_es",
-  "name": "Web de l'Institut d'Innovació Empresarial de les Illes Balears",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,7 +8,7 @@
       "type": "image/x-icon"
     },
     {
-      "src": "./favicon/android-icon-192x192.png",
+      "src": "logo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },

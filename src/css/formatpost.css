@@ -1,0 +1,93 @@
+.formatpost {
+    padding-left: 1rem;
+    padding-right: 1rem;  
+}
+
+.formatpost__project {
+    display: grid;
+    grid-template-areas:    "categories categories"
+                            "image image"
+                            "title itemtext"
+                            "title itemtext";
+}
+
+.formatpost__project span{
+    font-size: 2rem!important;
+    /*line-height: 2.4rem!important;*/
+    padding-top: -1rem;
+}
+
+
+
+.formatpost__project article a {
+   border-bottom: 3px solid rgba(58, 159, 157, 1);
+   padding-left: .3rem;
+   padding-right: .3rem;
+}
+
+.formatpost__project article a:hover {
+    background-color: rgba(33, 107, 106, 1);
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 4px solid rgba(0,0,0,1);
+}
+
+.formatpost__project div:first-child {
+    grid-area: categories;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  .formatpost__project div:nth-child(2) {
+    grid-area: image;
+    background-color: rgba(255, 255, 255, 1);
+  }  
+
+.formatpost__project div:nth-child(3)  {
+    grid-area: title;
+    height: 8rem;
+    background-color: rgba(255, 255, 255, 1);
+    padding-top: 2rem;
+    font-weight:100;
+    font-size: 2.4rem!important;
+    margin-right: .2rem;
+  }
+
+.formatpost__project div:nth-child(4)  {
+    grid-area: itemtext;
+    padding-top: 2rem;
+    padding-left: 30rem;
+    padding-right: 4rem;
+  }
+
+.formatpost__project_title_tags {
+    width: 40rem;
+    padding-top: 3rem;
+    line-height: 2rem;
+    display: grid;
+    grid-template-areas:    "subtitle"
+                            "tag"
+                            ;
+}
+.formatpost__project_title_tags div:first-child {
+    grid-area: subtitle;
+}
+.formatpost__project_title_tags div:nth-child(2) {
+    grid-area: tag;
+    padding-top: 4rem;
+}
+@media screen and (max-width: 925px) { 
+    .formatpost__project {
+        grid-template-areas: "imagen"
+                            "texto"
+                            "categoryes_tags";
+        /*background-color: #2196F3;*/
+        gap: 0rem;
+    }  
+    .formatpost__project h1{
+        font-size: 2rem;
+    }
+    .formatpost__project div:nth-child(2) img{
+        grid-area: imagen;
+        width: 100%;
+        height: auto;
+      }
+}

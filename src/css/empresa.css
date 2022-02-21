@@ -1,0 +1,96 @@
+.empresa {
+    display: grid;
+    grid-template-columns: 5rem 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    background-color: rgba(255, 255, 255, 1.0);
+    padding: 1rem;
+    max-width: 2560px;
+  }
+  @media screen and (max-width: 625px) { 
+    .empresa{
+      grid-template-columns: 1fr;
+    }
+    .empresa__cabecera {
+        writing-mode: horizontal-tb!important;
+    }
+  }
+  .empresa > div {
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+  }
+.empresa img {
+      /*max-width: 592px;*/
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+.empresa figcaption {
+    font-size: 2.0rem;
+  }
+.empresa__cabecera {
+    writing-mode: vertical-lr;
+    background-color: rgba(255, 255, 255, 1.0);
+    border: black 5px none;
+    grid-column-start: 1; 
+    grid-column-end: 1; 
+    grid-row-start: 1; 
+    grid-row-end: 4;
+    margin-left: -1rem;
+    font-size: 4rem;
+    font-weight: 800;
+    min-width: 60%;
+}
+@media screen and (max-width: 625px) { 
+  .empresa__cabecera {
+      font-size: 3rem;
+      padding-left: 1rem;
+  }
+}
+.empresa__reempresa {
+    /*grid-area: iempren;
+    background-color: #a3d4db;
+    border-style: solid;
+    border-color: rgba(0,0,0,1);
+    padding: 1rem;*/
+}
+
+.empresa__xecs{
+    /*grid-area: reempresa;
+    background-color: #a3d4db;
+    border-style: solid;
+    border-color: rgba(0,0,0,1);
+    padding: 1rem;*/
+}
+
+.empresa__agenda{
+   /*grid-area: centrebit;
+    background-color: #a3d4db;
+    border-style: solid;
+    border-color: rgba(0,0,0,1);
+    padding: 1rem;*/
+}
+
+.empresa__idiisba{
+    /*grid-area: registremarques;
+    background-color: #a3d4db;
+    border-style: solid;
+    border-color: rgba(0,0,0,1);
+    padding: 1rem;*/
+}
+
+.empresa__financament{
+    /*grid-area: formacio;
+    background-color: #a3d4db;
+    border-style: solid;
+    border-color: rgba(0,0,0,1);
+    padding: 1rem;*/
+}
+
+.empresa__ajutsisubvencions{
+    /*grid-area: ajutssubvencions;
+    background-color: #a3d4db;
+    border-style: solid;
+    border-color: rgba(0,0,0,1);
+    padding: 1rem;*/
+}

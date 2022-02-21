@@ -1,0 +1,111 @@
+.formatpost {
+    padding-left: 1rem;
+    padding-right: 1rem;  
+}
+
+.formatpost__item {
+    display: grid;
+    grid-template-areas:    "apartadoWeb apartadoWeb"
+                            "image title"
+                            "image itemtext"
+                            "image itemtext"
+                            "image itemtext"
+                            "categories categories";
+    width: 100%;
+}
+.formatpost__item span{
+    font-size: 2rem!important;
+    /*line-height: 2.4rem!important;*/
+    padding-top: -1rem;
+}
+.formatpost__item article a {
+   border-bottom: 2px solid rgba(58, 159, 157, 1);
+   /*padding-left: .3rem;*/
+   padding-right: .3rem;
+}
+.formatpost__item article a:hover {
+    background-color: rgba(33, 107, 106, 1);
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 4px solid rgba(0,0,0,1);
+}
+
+#apartado {
+    grid-area: apartadoWeb;
+    font-size: 2rem;
+}
+
+#categories_tags {
+    grid-area: categories;
+    background-color: rgb(250, 250, 250);
+    padding: .3rem;
+    border-radius: .3rem;
+  }
+
+#news_image {
+    vertical-align: bottom;
+    grid-area: image;
+    /*background-color: rgb(245, 27, 27);*/
+  }  
+
+#title  {
+    grid-area: title;
+    height: 6rem;
+    /*background-color: rgb(10, 236, 104);*/
+    /*padding-top: 2rem;*/
+    padding-left: 5rem;
+    font-weight:600;
+    font-size: 2.4rem!important;
+    margin-bottom: 1.5rem;
+
+  }
+
+article  {
+    grid-area: itemtext;
+    /*background-color: rgb(10, 25, 236);*/
+    /*color: #fff;*/
+    /*padding-top: 2rem;*/
+    padding-left: 5rem;
+    /*padding-right: 4rem;*/
+  }
+
+.formatpost__item_title_tags {
+    width: 40rem;
+    padding-top: 3rem;
+    line-height: 2rem;
+    display: grid;
+    grid-template-areas:    "subtitle"
+                            "tag"
+                            ;
+}
+.formatpost__item_title_tags div:first-child {
+    grid-area: subtitle;
+}
+.formatpost__item_title_tags div:nth-child(2) {
+    grid-area: tag;
+    padding-top: 4rem;
+}
+
+.categories_item::after {
+    content: " · ";
+}
+.tags_item::after {
+    content: " · ";
+}
+
+@media screen and (max-width: 925px) { 
+    .formatpost__item {
+        grid-template-areas: "imagen"
+                            "texto"
+                            "categoryes_tags";
+        /*background-color: #2196F3;*/
+        gap: 0rem;
+    }  
+    .formatpost__item h1{
+        font-size: 2rem;
+    }
+    .formatpost__item div:nth-child(2) img{
+        grid-area: imagen;
+        width: 100%;
+        height: auto;
+      }
+}

@@ -1,0 +1,44 @@
+.postsetgrid {
+    display:  grid ;
+    grid-template-columns: 24% 24% 24% 24%;
+    /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
+    gap: 2rem;
+    max-width: 1420px;
+    border: 1px salmon solic;
+}
+
+.postsetgrid__item {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.postsetgrid__item img {
+    width: 100%;
+    height: auto;
+}
+
+
+.postsetgrid__item div { 
+    font-size: 1rem;
+    margin-left: .5rem;
+}
+.postsetgrid__item div::before {
+    content: " [ ";
+}
+.postsetgrid__item div::after {
+    content: " ] ";
+}
+.postsetgrid__item div:hover {
+    opacity: .9;
+}
+.postsetgrid__item a:hover {
+    font-weight: 700;
+}
+@media screen and (max-width: 925px) { 
+    .postsetgrid {
+        grid-template-columns: auto  ;
+    }
+    .postsetgrid__item h1{ 
+        height: 40%;
+    }
+}

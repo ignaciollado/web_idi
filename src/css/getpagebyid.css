@@ -1,0 +1,29 @@
+.getpagebyid__grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+    line-height: 2rem;
+    width: 90%;
+    margin-top: 2rem;
+}
+
+.entry-title{
+    font-weight: normal;
+}
+
+.detail-content > h2{
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.getpagebyid__grid__content a {
+    border-bottom: 3px solid rgba(58, 159, 157, 1);
+    padding-left: .3rem;
+    padding-right: .3rem;
+ }
+ 
+ .getpagebyid__grid__content a:hover {
+     background-color: rgba(33, 107, 106, 1);
+     color: rgba(255, 255, 255, 1);
+     border-bottom: 4px solid rgba(0,0,0,1);
+ }

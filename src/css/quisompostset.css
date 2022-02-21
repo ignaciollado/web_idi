@@ -1,0 +1,55 @@
+.postsetgrid {
+    display:  grid;
+    grid-template-areas:    "tituloApartado tituloApartado texto texto"
+                            "tituloApartado tituloApartado texto texto"
+                            "tituloApartado tituloApartado texto texto"
+                            "servicio servicio servicio servicio texto";
+    gap: 2rem;
+    max-width: 1280px;
+    border: 1px salmon solic;
+}
+
+.postsetgrid__item {
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    font-size: 2rem;
+    text-align: left;
+    border-bottom: 1px solid #000;
+}
+
+.postsetgrid__item img {
+    width: 100%;
+    /*margin-bottom: 1rem;*/
+}
+
+.postsetgrid__item h1 {
+    height: 30%;
+    font-size: 2rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.postsetgrid__item span { 
+    font-size: 1rem;
+    margin-left: .5rem;
+}
+.postsetgrid__item span::before {
+    content: " [ ";
+}
+.postsetgrid__item span::after {
+    content: " ] ";
+}
+.postsetgrid__item div:hover {
+    opacity: .9;
+}
+.postsetgrid__item a:hover {
+    font-weight: 700;
+}
+@media screen and (max-width: 925px) { 
+    .postsetgrid {
+        grid-template-columns: auto  ;
+    }
+    .postsetgrid__item h1{ 
+        height: 40%;
+    }
+}
