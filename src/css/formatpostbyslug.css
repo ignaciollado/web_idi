@@ -13,6 +13,7 @@
                             "categories categories";
     width: 100%;
 }
+
 .formatpost__item span{
     font-size: 2rem!important;
     /*line-height: 2.4rem!important;*/
@@ -50,8 +51,6 @@
 #title  {
     grid-area: title;
     height: 6rem;
-    /*background-color: rgb(10, 236, 104);*/
-    /*padding-top: 2rem;*/
     padding-left: 5rem;
     font-weight:600;
     font-size: 2.4rem!important;
@@ -61,11 +60,7 @@
 
 article  {
     grid-area: itemtext;
-    /*background-color: rgb(10, 25, 236);*/
-    /*color: #fff;*/
-    /*padding-top: 2rem;*/
     padding-left: 5rem;
-    /*padding-right: 4rem;*/
   }
 
 .formatpost__item_title_tags {
@@ -91,15 +86,61 @@ article  {
 .tags_item::after {
     content: " · ";
 }
-
+@media screen and (max-width: 445px) {
+    .formatpost__item {
+        grid-template-areas:    "apartadoWeb"
+                                "image" 
+                                "title"
+                                "itemtext"
+                                "categories";
+ 
+    }
+    #title  {
+        grid-area: title;
+        height: 6rem;
+        padding-left: 0rem;
+        font-weight:600;
+        font-size: 2.4rem!important;
+        margin-bottom: 5.5rem;
+      }
+    article {
+        grid-area: itemtext;
+        padding-top: 2rem;
+        padding-left: 0rem;
+        padding-right: 4rem;
+      }
+      #categories_tags {
+        grid-area: categories;
+        margin-top: 5rem;
+      }     
+}
 @media screen and (max-width: 925px) { 
     .formatpost__item {
-        grid-template-areas: "imagen"
-                            "texto"
-                            "categoryes_tags";
-        /*background-color: #2196F3;*/
+        grid-template-areas:    "apartadoWeb"
+                                "image" 
+                                "title"
+                                "itemtext"
+                                "categories";
         gap: 0rem;
     }  
+    #title  {
+        grid-area: title;
+        height: 6rem;
+        padding-left: 0rem;
+        font-weight:600;
+        font-size: 2.4rem!important;
+        margin-bottom: 5.5rem;
+      }
+    article {
+        grid-area: itemtext;
+        padding-top: 2rem;
+        padding-left: 0rem;
+        padding-right: 4rem;
+      } 
+    #categories_tags {
+        grid-area: categories;
+        margin-top: 5rem;
+      }                 
     .formatpost__item h1{
         font-size: 2rem;
     }

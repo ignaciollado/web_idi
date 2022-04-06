@@ -7,15 +7,15 @@ export const StyledBurger = styled.button`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   background: transparent;
   border: none;
   cursor: pointer;
   padding: 0;
   z-index: 10;
   span {
-    width: 2rem;
+    width: 3rem;
     height: 0.25rem;
     background: ${({ theme, open }) => open ? theme.primaryDark : theme.primaryLight};
     border-radius: 10px;

@@ -1,7 +1,6 @@
 .tagspagecontent {
     display: grid;
     grid-template-areas: "itemTag itemTag itemTag itemTag";
-    /*grid-template-rows: 200px 200px 100px 100px;*/
     margin: 2rem auto;
     width: 100%;
     gap: 3rem;
@@ -13,8 +12,11 @@
     font-size: 3rem;
     line-height: 5rem;
 }
+.tagspage {
+    grid-template-areas: "itemTag";
+}
 .tagspage__item:hover {
-    background-color: rgba(118, 118, 116, .2);
+    background-color: rgba(240, 240, 240, 0.2);
 }
 .tagspage__item__capitalletter {
     text-transform: capitalize;
@@ -27,7 +29,13 @@
     padding-left: .15rem;
 }
 @media screen and (max-width: 925px) { 
-    .tagspage {
+
+    .tagspagecontent {
+        display: grid;
         grid-template-areas: "itemTag";
+        /*grid-template-rows: 200px 200px 100px 100px;*/
+        margin: 2rem auto;
+        width: 100%;
+        gap: 3rem;
     }
 }

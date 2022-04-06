@@ -1,6 +1,6 @@
 .getallpostbyacategory {
     display: grid;
-    grid-template-areas:  "head head head head"; 
+    grid-template-areas:  "head head head head";
     grid-column-gap: 2rem;
     grid-row-gap: 3rem;
     background-color: rgba(255, 255, 255, 1.0);
@@ -45,7 +45,8 @@
 
 @media screen and (max-width: 925px) { 
   .getallpostbyacategory{
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
+    grid-template-areas:  'head' 'head' 'head' 'head';
     padding-left: .5rem;
     padding-right: .5rem;
     margin-bottom: 2rem;
@@ -54,7 +55,8 @@
       writing-mode: horizontal-tb!important;
   }
   .getallpostbyacategory__cabecera {
-        font-size: 2.8rem;
-        padding-left: 1rem;
+        /* font-size: 2.8rem;
+        padding-left: 1rem; */
+        font-weight: bolder;
   }
 }

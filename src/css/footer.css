@@ -3,7 +3,6 @@ footer {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
   background-color: rgba(255, 255, 255, 1.0);
-  /*position: relative;*/
    
   width: 100%;
   max-width: 1420px;
@@ -25,6 +24,7 @@ footer {
   footer {
     grid-template-columns: 1fr;
     font-size: 3.5rem;
+    /* text-align: center; */
   }
 }
 footer div:nth-child(2) img{
@@ -57,14 +57,14 @@ footer div {
 }
 .block-hablemos:not(.movil) {
   right: .1rem;
-  width: 13rem;
+  width: 14rem;
 }
 .block-hablemos {
   border-radius: 1rem 0rem 0rem 1rem;
   border: rgba(0, 0, 0, 1.0) 1px solid;
   /*background-color: rgba(76, 175, 80, 0.3);*/ 
   right: unset;
-  bottom: 2rem;
+  bottom: 20rem;
   position: fixed;
   z-index: 1030;
   padding-left: .9rem;

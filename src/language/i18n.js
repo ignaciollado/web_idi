@@ -20,6 +20,7 @@ i18n
       en: {
         translation: {
           description: {
+            agenda: "Agenda",
             loading: 'Loading, one moment please ...',
             loadingNews: 'Loading, one moment please ...',
             exploringIDI: 'Exploring IDI ...',
@@ -37,6 +38,7 @@ i18n
             searchingTheWeb: "Searching the web ...",
             entrepreneur: 'Entrepreneur',
             company: 'Company',
+            whatWeDo: "What we do",
             institute: 'Institute',
             townHall: 'Town Hall',
             legalAdvice: 'Legal advice',
@@ -55,11 +57,11 @@ i18n
             hace: '',
             dias: ' days',
             proyectosIDI: 'IDI projects',
-            exploraProyectos: 'Explora nuestros proyectos',
-            eresEmprendedor: '¿Eres un emprendedor?',
-            eresEmpresa: '¿Eres una empresa?',
-            eresAyuntamiento: '¿Eres un ayuntamiento?',
-            eresCentroEducativo: '¿Eres un centro educativo?',
+            exploraProyectos: 'Explore our projects',
+            eresEmprendedor: 'Are you an entrepreneur?',
+            eresEmpresa: 'Are you a company?',
+            eresAyuntamiento: 'Are you a town hall?',
+            eresCentroEducativo: 'Are you an institute?',
             noEstasEnElMenu: '¿No estás en este menú?',
             haznosUnPropuesta: 'Haznos una propuesta',
             sendingMessage: 'Sending the messaga, one moment please ...',
@@ -76,6 +78,7 @@ i18n
       es: {
         translation: {
           description: {
+            agenda: "Agenda",
             loading: 'Cargando, un momento por favor ...',
             loadingNews: 'Cargando, un momento por favor ...',
             exploringIDI: 'Explorando el IDI ...',
@@ -93,6 +96,7 @@ i18n
             searchingTheWeb: "Buscando en la web ...",
             entrepreneur: 'Emprendedor',
             company: 'Empresa',
+            whatWeDo: "Que hacemos",
             institute: 'Instituto',
             townHall: 'Ayuntamiento',
             legalAdvice: 'Aviso legal',
@@ -134,6 +138,7 @@ i18n
       ca: {
         translation: {
           description: {
+            agenda: "Agenda",
             loading: 'Carregant, un moment per favor ...',
             loadingNews: 'Carregant, un moment per favor ...',
             exploringIDI: 'Explorant l\'IDI ...',
@@ -151,6 +156,7 @@ i18n
             searchingTheWeb: "Cercant a la web ...",
             entrepreneur: 'Emprenedor',
             company: 'Empresa',
+            whatWeDo: "Què feim",
             institute: 'Institut',
             townHall: 'Ajuntament',
             legalAdvice: 'Avís legal',

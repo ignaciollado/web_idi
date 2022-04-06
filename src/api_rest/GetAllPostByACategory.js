@@ -26,7 +26,8 @@ function serviceMainClass (category) {
                 serviceMainClass = "getallpostbyacategory"
               break;
             case 85:
-                serviceMainClass = "getallpostbyacategoryTwoColumns"
+                /* serviceMainClass = "getallpostbyacategoryTwoColumns" */
+                serviceMainClass = "getallpostbyacategory"
                 break;
             default:
                 serviceMainClass = "getallpostbyacategory"

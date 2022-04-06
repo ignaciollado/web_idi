@@ -8,16 +8,16 @@ export const StyledMenu = styled.nav`
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
   height: 100vh;
   text-align: left;
-  padding: 0;
+  padding: 1rem;
   position: absolute;
-  top: 1rem;
-  left: 0;
+  top: 3rem;
+  left: -1rem;
   transition: transform 0.3s ease-in-out;
   @media (max-width: ${({ theme }) => theme.mobile}) {
       width: 100%;
     }
   a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     padding: 2rem 0;
     font-weight: bold;
@@ -27,10 +27,11 @@ export const StyledMenu = styled.nav`
     transition: color 0.3s linear;
     @media (max-width: ${({ theme }) => theme.mobile}) {
       font-size: 1.5rem;
-      text-align: center;
+      text-align: left;
     }
     &:hover {
       color: ${({ theme }) => theme.primaryHover};
+      cursor: pointer!important;
     }
   }
 `;

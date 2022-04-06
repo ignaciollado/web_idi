@@ -1,6 +1,6 @@
 
 import React from 'react'
-import 'react-simple-chat/src/components/index.css'
+/* import 'react-simple-chat/src/components/index.css' */
 //----------- Needed for the multipage site -------------------------------------
 import { BrowserRouter, Route, Routes  } from 'react-router-dom'
 //-------------------------------------------------------------------------------
@@ -88,5 +88,5 @@ function App() {
     </div>
   );
 }
-
+console.log("width: "+window.innerWidth)
 export default App;

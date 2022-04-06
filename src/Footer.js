@@ -15,13 +15,13 @@ export default function Footer() {
 
 <footer>
 
-    <div className="text-left block-hablemos">
+    {/* <div className="text-left block-hablemos">
         <div id="content-hablemos" className="footer__container_hablemos">
             
-            {/*<div className="footer__container_hablemos_whatsapp">
+            <div className="footer__container_hablemos_whatsapp">
                 <a id="whatsapp" rel="nofollow noopener noreferrer" target="_blank" href="https://wa.me/34677234076?text=Buenos días, ¿cómo le podemos ayudar?" 
                 type="button" className="btn-hablemos"><BsFillChatFill /> 971 17 61 61</a>            
-            </div> */}
+            </div>
                    
             <div className="footer__container_hablemos_telefono">
                 <a id="tel" rel="nofollow noopener noreferrer" target="_blank" href="tel:+34971176161" type="button" className="btn-hablemos"><FcPhone /> 971 17 61 61</a>
@@ -32,7 +32,7 @@ export default function Footer() {
             </div>
 
         </div>
-    </div>
+    </div> */}
 
 
     <div>
@@ -45,7 +45,8 @@ export default function Footer() {
         <span>Plaça de Son Castelló, 1</span>
         <span>07009 - Palma de Mallorca</span>
         <span>Illes Balears</span>
-        <span>Tel: 971 17 61 61</span>
+        <span><a id="tel" rel="nofollow noopener noreferrer" target="_blank" href="tel:+34971176161" type="button" className="btn-hablemos"><FcPhone /> 971 17 61 61</a>
+</span>
     </div>
 
     <div>
@@ -63,7 +64,7 @@ export default function Footer() {
         <a className='' href="/politica-de-pricacidad">{t('description.privacyPolicy')}</a>
         <a className='' href="/politica-de-cookies">{t('description.cookiesPolicy')}</a>
     </div>
-
 </footer>
+
     )
 }

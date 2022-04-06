@@ -21,7 +21,7 @@ export default function QuiSomExplora() {
                         <img aria-label="" alt="empresa" title="empresa" src= ${ empresa } />
                         <figcaption >${ t('description.eresEmpresa') }</figcaption>
                     </figure></a>
-                <a href="#Ets un emprenedor"><figure>
+                <a href="#Ets una persona emprenedora"><figure>
                         <img aria-label="" alt="emprenedor" title="emprenedor" src= ${ emprendedor } />
                         <figcaption >${ t('description.eresEmprendedor') }</figcaption>
                     </figure></a>

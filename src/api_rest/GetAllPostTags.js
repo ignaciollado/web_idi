@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 //---------------------------------------------------------------------------------
 import '../css/tagspage.css'
 import Axios from 'axios'
-import { ContactlessOutlined } from '@material-ui/icons'
+/* import { ContactlessOutlined } from '@material-ui/icons' */
 
 export default function GetAllPostTags(props) {
     const { t, i18n } = useTranslation()
@@ -58,7 +58,7 @@ export default function GetAllPostTags(props) {
 
     return (
         <div>
-        <div className='tagspageheader'>{t('description.exploreTheIDIServices')}</div><hr></hr> 
+        <div className='tagspageheader'>{t('description.whatWeDo')}</div><hr></hr> 
             {
             !allPostTags ? <strong>{t('description.exploringIDI')}</strong>:  
             <div className="tagspagecontent" dangerouslySetInnerHTML = 

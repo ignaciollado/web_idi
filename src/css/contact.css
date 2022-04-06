@@ -57,3 +57,14 @@
     color: rgba(2, 41, 11, 1);
     font-weight: bolder;
 }
+
+@media screen and (max-width: 625px) { 
+    .contact{
+        margin: 1rem 0rem !important;
+    }
+    .contact input[type = submit] {
+ 
+        width: 100%;
+
+    }    
+  }

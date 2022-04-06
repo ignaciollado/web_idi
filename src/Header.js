@@ -12,7 +12,8 @@ import { GlobalStyles } from './global';
 import { theme } from './theme';
 import { Burger, Menu } from './components';
 import FocusLock from 'react-focus-lock';
-
+import { menuItems } from "./components/menuItem"
+import MenuItems from "../src/components/MenuItems";
 const lngs = {
     //en: { nativeName: 'ENG' },
     es: { nativeName: 'ESP' },
@@ -59,15 +60,18 @@ export default function Header() {
         </div>
 
         <div tabIndex="0" className="header__nav_main">
-                <ul>
-                    <li><a href="/" rel="noopener noreferrer">{t('description.work')}</a></li>
+                <ul className='menus'>
                     <li><a className="" href="/quienes-somos">{t('description.about')}</a></li>
-                    <li><a className="" href="/que-hace-el-idi">{t('description.explore')}</a></li>
+                    {menuItems.map((menu, index) => {
+                      return <MenuItems items={menu} key={index} />;
+                    })}
+                   {/*  <li><a className="" href="/que-hace-el-idi">{t('description.explore')}</a></li> */}
                     <li><a className="" href="/noticias-blog">{t('description.news')}</a></li>
+                    <li><a className="" href="/agenda">{t('description.agenda')}</a></li>
                     <li><a className="" href="/ayudas-subvenciones">{t('description.grantSubsidies')}</a></li>
                     <li><a className="" href="/transparencia">{t('description.openness')}</a></li>
                     <li><a className="" href="https://www.caib.es/seucaib/">{t('description.electronicOffice')}</a></li>
-                    <li><a className="" href="/contactar">{t('description.contactUs')}</a></li>
+                    {/* <li><a className="" href="/contactar">{t('description.contactUs')}</a></li> */}
                 </ul>    
         </div>
 
