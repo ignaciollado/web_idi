@@ -20,6 +20,7 @@ import GetAllPostByTag from './api_rest/GetAllPostByTag'
 import GetAllPostByTagExcludeCategory from './api_rest/GetAllPostByTagCategoryExcluded'
 import GetAllPostByNewsCategory from './api_rest/GetAllPostByNewsCategory'
 import GrantsAndSubsidies from './components/GrantsAndSubsidies'
+import TheAgenda from './components/TheAgenda'
 import Transparencia from './api_rest/GetAllFromTransparency'
 import Sedelectronica from './api_rest/GetAllPostByACategory'
 import Footer from './Footer'
@@ -64,6 +65,8 @@ function App() {
           <Route path="gettransparencydetail/:id/:category" element= { <GetTransParenceyDetail />} />
           
           <Route path="/ayudas-subvenciones" element= { <GrantsAndSubsidies /> } />
+
+          <Route path="/the-agenda" element= { <TheAgenda /> } />
           
           <Route path="/contactar" element= { <Contact /> } />
           
@@ -82,6 +85,7 @@ function App() {
           <Route path="/" element= { <OrganizationUnit theMainCategory="1" theCategoryExcluded="90" /> } />
 
           <Route>404 Page</Route>
+          
         </Routes>
       </BrowserRouter>
       <Footer />

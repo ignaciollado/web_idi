@@ -2,7 +2,7 @@ import React from 'react'
 //----------- Needed for internationalization -------------------------------------
 import { useTranslation } from 'react-i18next'
 //---------------------------------------------------------------------------------
-export default function GrantsAndSubsidies() {
+export default function TheAgenda() {
     const { i18n } = useTranslation()
     const currentLanguage = i18n.language
 
@@ -13,8 +13,7 @@ export default function GrantsAndSubsidies() {
                 
            <div dangerouslySetInnerHTML={ 
                { __html:`
-
-               <iframe src="https://utils.idi.es/index.php/ayud_subv/muestraEnIframe/${currentLanguage}" id="ayud-subven" name="ayud-subven" width="100%" height="1024px" frameBorder="0"/>`}
+               <iframe src= "https://utils.idi.es/index.php/agenda_ctrl/muestraEnIframe/${currentLanguage}" id="theAgenda" name="theAgenda" width="100%" height="1420px" frameBorder="0"/>`}
             } /> 
          }
         </div>

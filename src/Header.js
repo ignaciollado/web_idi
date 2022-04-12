@@ -67,7 +67,7 @@ export default function Header() {
                     })}
                    {/*  <li><a className="" href="/que-hace-el-idi">{t('description.explore')}</a></li> */}
                     <li><a className="" href="/noticias-blog">{t('description.news')}</a></li>
-                    <li><a className="" href="/agenda">{t('description.agenda')}</a></li>
+                    <li><a className="" href="/the-agenda">{t('description.agenda')}</a></li>
                     <li><a className="" href="/ayudas-subvenciones">{t('description.grantSubsidies')}</a></li>
                     <li><a className="" href="/transparencia">{t('description.openness')}</a></li>
                     <li><a className="" href="https://www.caib.es/seucaib/">{t('description.electronicOffice')}</a></li>

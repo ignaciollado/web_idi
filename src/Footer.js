@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { FcPhone } from 'react-icons/fc'
-import { GrMail } from 'react-icons/gr'
+/* import { GrMail } from 'react-icons/gr' */
 import logo from './images/logo-idi-negro-footer.jpg'
 
 import './css/footer.css'

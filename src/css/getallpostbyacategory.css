@@ -59,4 +59,7 @@
         padding-left: 1rem; */
         font-weight: bolder;
   }
+  .getallpostbyacategory figure {
+    max-width: 100%;
+  }
 }
