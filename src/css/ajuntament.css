@@ -1,0 +1,50 @@
+.ajuntament{
+  display: grid;
+  grid-template-columns: 5rem 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  background-color: rgba(255, 255, 255, 1.0);
+  padding: 1rem;
+  max-width: 2560px;
+}
+@media screen and (max-width: 625px) { 
+  .ajuntament{
+    grid-template-columns: 1fr;
+  }
+  .ajuntament__cabecera {
+    writing-mode: horizontal-tb!important;
+}  
+}
+.ajuntament > div {
+  display: grid;
+  background-color: rgba(255, 255, 255, 1.0);
+  text-align: left;
+}
+
+.ajuntament img {
+    /*max-width: 592px;*/
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.ajuntament figcaption {
+  font-size: 2.0rem;
+}
+.ajuntament__cabecera {
+  writing-mode: vertical-lr;
+  background-color: rgba(255, 255, 255, 1.0);
+  border: black 5px none;
+  grid-column-start: 1; 
+  grid-column-end: 1; 
+  grid-row-start: 1; 
+  grid-row-end: 4;
+  margin-left: -1rem;
+  font-size: 4rem;
+  font-weight: 800;
+  min-width: 60%;
+  }
+  @media screen and (max-width: 625px) { 
+    .ajuntament__cabecera {
+        font-size: 3rem;
+        padding-left: 1rem;
+    }
+  }
