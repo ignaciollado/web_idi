@@ -1,6 +1,5 @@
 
 import React from 'react'
-/* import 'react-simple-chat/src/components/index.css' */
 //----------- Needed for the multipage site -------------------------------------
 import { BrowserRouter, Route, Routes  } from 'react-router-dom'
 //-------------------------------------------------------------------------------
@@ -9,9 +8,7 @@ import { useTranslation } from 'react-i18next'
 //---------------------------------------------------------------------------------
 import './css/App.css'
 import Header from './Header'
-
 import OrganizationUnit from './api_rest/GetAllSubCategories' //Gets all subCategories from a parent category, 'parentCategory' parameter
-
 import News from './api_rest/GetPostSet'
 
 import QuienesSomos from './api_rest/GetAllQuiSomPosts'
